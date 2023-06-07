@@ -1,0 +1,5 @@
+.vs
+.cr
+Yandex/bin/Debug*
+*.nupkg
+*.nuspec

@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hopex.Yandex</name>
+    </assembly>
+    <members>
+        <member name="T:Hopex.YandexDisk.Disk">
+            <summary>
+            YandexDisk workflow.
+            </summary>
+        </member>
+        <member name="P:Hopex.YandexDisk.Disk.Token">
+            <summary>
+            Account token.
+            </summary>
+        </member>
+        <member name="M:Hopex.YandexDisk.Disk.#ctor(System.String)">
+            <summary>
+            YandexDisk workflow.
+            </summary>
+            <param name="token">Account token.</param>
+        </member>
+        <member name="M:Hopex.YandexDisk.Disk.UpLoad(System.String,System.String,System.Boolean)">
+            <summary>
+            Asynchronously uploading a file to disk.
+            </summary>
+            <param name="diskPath">Path on disk with extension.</param>
+            <param name="localPath">Local path with extension.</param>
+            <param name="isOwerwrite">Need overwrite file.</param>
+        </member>
+        <member name="M:Hopex.YandexDisk.Disk.DownLoad(System.String,System.String)">
+            <summary>
+            Asynchronous disk loading.
+            </summary>
+            <param name="diskPath">Path on disk with extension.</param>
+            <param name="localPath">Local path with extension.</param>
+        </member>
+        <member name="T:Hopex.YandexSpeech.Emotions">
+            <summary>
+            List of intonations.
+            </summary>
+        </member>
+        <member name="F:Hopex.YandexSpeech.Emotions.Good">
+            <summary>
+            Good intonation.
+            </summary>
+        </member>
+        <member name="F:Hopex.YandexSpeech.Emotions.Evil">
+            <summary>
+            Evil intonation.
+            </summary>
+        </member>
+        <member name="F:Hopex.YandexSpeech.Emotions.Neutral">
+            <summary>
+            Neutral intonation.
+            </summary>
+        </member>
+        <member name="T:Hopex.YandexSpeech.Speakers">
+            <summary>
+            List of voices.
+            </summary>
+        </member>
+        <member name="F:Hopex.YandexSpeech.Speakers.Alyss">
+            <summary>
+            Alyss speaker.
+            </summary>
+        </member>
+        <member name="F:Hopex.YandexSpeech.Speakers.Jane">
+            <summary>
+            Jane speaker.
+            </summary>
+        </member>
+        <member name="F:Hopex.YandexSpeech.Speakers.Oksana">
+            <summary>
+            Oksana speaker.
+            </summary>
+        </member>
+        <member name="F:Hopex.YandexSpeech.Speakers.Omazh">
+            <summary>
+            Omazh speaker.
+            </summary>
+        </member>
+        <member name="F:Hopex.YandexSpeech.Speakers.Zahar">
+            <summary>
+            Zahar speaker.
+            </summary>
+        </member>
+        <member name="F:Hopex.YandexSpeech.Speakers.Ermil">
+            <summary>
+            Ermil speaker.
+            </summary>
+        </member>
+        <member name="T:Hopex.YandexSpeech.Speech">
+            <summary>
+            YandexSpeech workflow.
+            </summary>
+        </member>
+        <member name="M:Hopex.YandexSpeech.Speech.#ctor">
+            <summary>
+            YandexSpeech workflow.
+            </summary>
+        </member>
+        <member name="M:Hopex.YandexSpeech.Speech.NewSpeech(System.String,System.Int32)">
+            <summary>
+            Voice over text by default voice.
+            </summary>
+            <param name="text">Playback text.</param>
+            <param name="rate">Rate of speech.</param>
+        </member>
+        <member name="M:Hopex.YandexSpeech.Speech.NewSpeech(System.String,System.String,Hopex.YandexSpeech.Speakers,Hopex.YandexSpeech.Emotions,System.Double,System.String)">
+            <summary>
+            Voice over text.
+            </summary>
+            <param name="key">Accout access key.</param>
+            <param name="text">Playback text.</param>
+            <param name="speaker">Voice used.</param>
+            <param name="emotion">Voice intonation.</param>
+            <param name="speed">Speed of speech.</param>
+            <param name="lang">Language of speech.</param>
+        </member>
+    </members>
+</doc>
