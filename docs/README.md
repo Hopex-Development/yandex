@@ -2,7 +2,45 @@
 
 The library contains a class for playing text with 6 voices and 3 intonations, as well as a class that allows you to asynchronously download and upload files from the cloud.
 
-## How to use Yandex.Disk
+# Adding to the project
+
+#### .NET CLI
+```CLI
+> dotnet add package Hopex.Yandex --version 23.0.1
+```
+
+#### Package Manager
+```CLI
+PM> NuGet\Install-Package Hopex.Yandex -Version 23.0.1
+```
+
+#### PackageReference
+```XML
+<PackageReference Include="Hopex.Yandex" Version="23.0.1" />
+```
+
+#### Paket CLI
+```CLI
+> paket add Hopex.Yandex --version 23.0.1
+```
+
+#### Script & Interactive
+```CLI
+> #r "nuget: Hopex.Yandex, 23.0.1"
+```
+
+#### Cake
+```
+// Install Hopex.Yandex as a Cake Addin
+#addin nuget:?package=Hopex.Yandex&version=23.0.1
+
+// Install Hopex.Yandex as a Cake Tool
+#tool nuget:?package=Hopex.Yandex&version=23.0.1
+```
+
+# How to use
+
+### Yandex.Disk
 
 ```C#
 public void YandeskDisk()
@@ -28,7 +66,7 @@ public void YandeskDisk()
 }
 ```
 
-## How to use Yandex.Speech
+### Yandex.Speech
 
 ```C#
 public void YandeskSpeech()
