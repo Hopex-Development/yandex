@@ -26,15 +26,27 @@ namespace Hopex.YandexDisk
         /// <param name="diskPath">Path on disk with extension.</param>
         /// <param name="localPath">Local path with extension.</param>
         /// <param name="isOwerwrite">Need overwrite file.</param>
-        public async void UpLoad(string diskPath, string localPath, bool isOwerwrite = false)
-            => await new DiskHttpApi(Token).Files.UploadFileAsync(diskPath, isOwerwrite, localPath, CancellationToken.None);
+        public async void UploadFile(string diskPath, string localPath, bool isOwerwrite = false)
+            => await new DiskHttpApi(Token)
+            .Files
+            .UploadFileAsync(
+                path: diskPath, 
+                overwrite: isOwerwrite, 
+                localFile: localPath,
+                cancellationToken: CancellationToken.None
+            );
 
         /// <summary>
         /// Asynchronous disk loading.
         /// </summary>
         /// <param name="diskPath">Path on disk with extension.</param>
         /// <param name="localPath">Local path with extension.</param>
-        public async void DownLoad(string diskPath, string localPath)
-            => await new DiskHttpApi(Token).Files.DownloadFileAsync(diskPath, localPath);
+        public async void DownLoadFile(string diskPath, string localPath)
+            => await new DiskHttpApi(Token)
+            .Files
+            .DownloadFileAsync(
+                path: diskPath, 
+                localFile: localPath
+            );
     }
 }

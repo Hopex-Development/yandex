@@ -6,36 +6,36 @@ The library contains a class for playing text with 6 voices and 3 intonations, a
 
 #### .NET CLI
 ```CLI
-> dotnet add package Hopex.Yandex --version 23.0.1
+> dotnet add package Hopex.Yandex --version 23.0.3
 ```
 
 #### Package Manager
 ```CLI
-PM> NuGet\Install-Package Hopex.Yandex -Version 23.0.1
+PM> NuGet\Install-Package Hopex.Yandex -Version 23.0.3
 ```
 
 #### PackageReference
 ```XML
-<PackageReference Include="Hopex.Yandex" Version="23.0.1" />
+<PackageReference Include="Hopex.Yandex" Version="23.0.3" />
 ```
 
 #### Paket CLI
 ```CLI
-> paket add Hopex.Yandex --version 23.0.1
+> paket add Hopex.Yandex --version 23.0.3
 ```
 
 #### Script & Interactive
 ```CLI
-> #r "nuget: Hopex.Yandex, 23.0.1"
+> #r "nuget: Hopex.Yandex, 23.0.3"
 ```
 
 #### Cake
 ```
 // Install Hopex.Yandex as a Cake Addin
-#addin nuget:?package=Hopex.Yandex&version=23.0.1
+#addin nuget:?package=Hopex.Yandex&version=23.0.3
 
 // Install Hopex.Yandex as a Cake Tool
-#tool nuget:?package=Hopex.Yandex&version=23.0.1
+#tool nuget:?package=Hopex.Yandex&version=23.0.3
 ```
 
 # How to use
@@ -52,14 +52,14 @@ public void YandeskDisk()
     Disk MyDisk = new Disk(oauthToken);
     
     // Upload file from local
-    Disk.UpLoad(
+    Disk.UploadFile(
         diskPath: "SomeFolder/MyDocs/Template.docx",
         localPath: @"C:\%USERPROFILE%\Desktop\Template.docx",
         isOwerwrite: false
     );
     
     // Download file from disk
-    Disk.DownLoad(
+    Disk.DownLoadFile(
         diskPath: "SomeFolder/MyDocs/Template.docx", 
         localPath: @"C:\%USERPROFILE%\Desktop\Template.docx"
     );

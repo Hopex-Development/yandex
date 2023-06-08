@@ -94,8 +94,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="README.md" />
-    <None Include="LICENSE.md" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="YandexDisk\Disk.cs" />
     <Compile Include="YandexSpeech\Emotions.cs" />
