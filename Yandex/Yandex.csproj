@@ -102,6 +102,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Hopex.Yandex.24.0.1.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

@@ -1,38 +1,35 @@
-﻿namespace Hopex.YandexSpeech
+﻿using System.Collections.Generic;
+
+namespace Hopex.YandexSpeech
 {
     /// <summary>
     /// List of voices.
     /// </summary>
+    /// <remarks>
+    /// Check out the list of languages and the voices supported for them <seealso href="https://cloud.yandex.ru/en/docs/speechkit/tts/voices">here</seealso>.
+    /// </remarks>
     public enum Speakers
     {
-        /// <summary>
-        /// Alyss speaker.
-        /// </summary>
-        Alyss,
-
-        /// <summary>
-        /// Jane speaker.
-        /// </summary>
+        Lea,
+        John,
+        Naomi,
+        Amira,
+        Madi,
+        Alena,
+        Filipp,
+        Ermil,
         Jane,
-
-        /// <summary>
-        /// Oksana speaker.
-        /// </summary>
-        Oksana,
-
-        /// <summary>
-        /// Omazh speaker.
-        /// </summary>
+        Madirus,
         Omazh,
-
-        /// <summary>
-        /// Zahar speaker.
-        /// </summary>
         Zahar,
-
-        /// <summary>
-        /// Ermil speaker.
-        /// </summary>
-        Ermil
+        Dasha,
+        Julia,
+        Lera,
+        Masha,
+        Marina,
+        Alexander,
+        Kirill,
+        Anton,
+        Nigora
     }
 }

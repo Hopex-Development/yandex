@@ -6,36 +6,36 @@ The library contains a class for playing text with 6 voices and 3 intonations, a
 
 #### .NET CLI
 ```CLI
-> dotnet add package Hopex.Yandex --version 23.0.3
+> dotnet add package Hopex.Yandex --version 24.0.1
 ```
 
 #### Package Manager
 ```CLI
-PM> NuGet\Install-Package Hopex.Yandex -Version 23.0.3
+PM> NuGet\Install-Package Hopex.Yandex -Version 24.0.1
 ```
 
 #### PackageReference
 ```XML
-<PackageReference Include="Hopex.Yandex" Version="23.0.3" />
+<PackageReference Include="Hopex.Yandex" Version="24.0.1" />
 ```
 
 #### Paket CLI
 ```CLI
-> paket add Hopex.Yandex --version 23.0.3
+> paket add Hopex.Yandex --version 24.0.1
 ```
 
 #### Script & Interactive
 ```CLI
-> #r "nuget: Hopex.Yandex, 23.0.3"
+> #r "nuget: Hopex.Yandex, 24.0.1"
 ```
 
 #### Cake
 ```
 // Install Hopex.Yandex as a Cake Addin
-#addin nuget:?package=Hopex.Yandex&version=23.0.3
+#addin nuget:?package=Hopex.Yandex&version=24.0.1
 
 // Install Hopex.Yandex as a Cake Tool
-#tool nuget:?package=Hopex.Yandex&version=23.0.3
+#tool nuget:?package=Hopex.Yandex&version=24.0.1
 ```
 
 # How to use
@@ -86,6 +86,14 @@ public void YandeskSpeech()
         "Some text for speech",
         Speakers.Jane,
         Emotions.Evil
+    );
+    
+    // or
+    MySpeech.NewSpeech(
+        oauthToken,
+        "Some text for speech",
+        "Jane",
+        "Evil"
     );
 }
 ```
